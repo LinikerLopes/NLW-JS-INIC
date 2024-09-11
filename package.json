@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "inquery": "^1.1.0"
+    "inquery": "^1.1.0",
+    "inquirer": "^10.2.2"
   }
 }
