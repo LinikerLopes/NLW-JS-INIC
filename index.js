@@ -70,7 +70,7 @@ const listarMetas = async() =>{
         meta.checked = true
     })
 
-    mensagem = "metas marcadas como concluidas"
+    mensagem = "Metas marcadas como concluidas"
 }
 
 const realizadas = async () => {       //Higher Order Functions - Find, ForEach , Map e Filter
@@ -95,7 +95,7 @@ const realizadas = async () => {       //Higher Order Functions - Find, ForEach 
 const metasAbertas = async () =>{
 
     if(metas.length == 0){
-        mensagem = "não existem metas"
+        mensagem = "Não existem metas"
         return
     }
 
@@ -116,7 +116,7 @@ const metasAbertas = async () =>{
 const deletarMetas = async() =>{
 
     if(metas.length == 0){
-        mensagem = "não existem metas"
+        mensagem = "Não existem metas"
         return
     }
 
@@ -216,7 +216,4 @@ const start = async () => {
 start()
 
 
-//possivel bug
-    // 1 -  ao não ter metas, ele retorna sempre em não ha metas
-        // - solução: retornar: não há metas. cadastre alguma
-    
+
