@@ -18,17 +18,16 @@ const carregarMetas = async () =>{
 }
 
 const salvarMetas = async () =>{
-    await fs.writeFile("metas.json", JSON.stringify(metas, null, 2)) //configura o arq json
+    await fs.writeFile("metas.json", JSON.stringify(metas, null, 2)) //config arq json
 }
 
 const cadastrarMeta = async ()=>{
+    const meta = await input ({ message: "Digita a meta: "})
 
-    if(metas.length == 0){
+if(meta.length == 0){
         mensagem = "não existem metas"
         return
     }
-
-    const meta = await input({ message: "Digite a meta:"})
 
         if(meta.length == 0){
             mensagem = 'A meta não pode ser vazia'
@@ -218,6 +217,6 @@ start()
 
 
 //possivel bug
-    // 1 -  ao deletar todas as metas, ele retorna erro ao tentar listas
+    // 1 -  ao não ter metas, ele retorna sempre em não ha metas
         // - solução: retornar: não há metas. cadastre alguma
     
